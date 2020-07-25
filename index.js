@@ -1,5 +1,8 @@
-var GetFile = require("./down");
-var packJson = require("./package.json");
+#!/usr/bin/env node
+const path = require("path");
+var GetFile = require("./down.js");
+var packJson = require( "../../package.json");
+
 
 if (!packJson.iconFont || !packJson.iconFont.address) {
   console.log("请配置项目地址");
